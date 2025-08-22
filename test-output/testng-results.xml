@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-18T14:50:08 IST" name="Default suite" finished-at="2025-08-18T14:50:37 IST" duration-ms="28237">
+    <groups>
+      <group name="PL2">
+        <method signature="RestAssured_TestCases.loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@1ebd319f]" name="loginWithSeleniumAndGetCookie" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getSubunitsTree()[pri:1, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getSubunitsTree" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getAdminSkills()[pri:2, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getAdminSkills" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getAdminEdu()[pri:3, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getAdminEdu" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getAdminLicenses()[pri:4, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getAdminLicenses" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getAdminLanguages()[pri:5, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getAdminLanguages" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getMembershipdetails()[pri:6, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getMembershipdetails" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getNationalities()[pri:7, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getNationalities" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getTheme()[pri:8, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getTheme" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getemailConfiguration()[pri:9, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getemailConfiguration" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.getEmailSubscription()[pri:10, instance:testcases.RestAssured_TestCases@1ebd319f]" name="getEmailSubscription" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostCaption()[pri:11, instance:testcases.RestAssured_TestCases@1ebd319f]" name="PostCaption" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.PostPhoto()[pri:12, instance:testcases.RestAssured_TestCases@1ebd319f]" name="PostPhoto" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.LikeShare()[pri:13, instance:testcases.RestAssured_TestCases@1ebd319f]" name="LikeShare" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.DeleteShare()[pri:14, instance:testcases.RestAssured_TestCases@1ebd319f]" name="DeleteShare" class="testcases.RestAssured_TestCases"/>
+        <method signature="RestAssured_TestCases.UpdateBuzzPost()[pri:15, instance:testcases.RestAssured_TestCases@1ebd319f]" name="UpdateBuzzPost" class="testcases.RestAssured_TestCases"/>
+      </group> <!-- PL2 -->
+    </groups>
+    <test started-at="2025-08-18T14:50:08 IST" name="Default test" finished-at="2025-08-18T14:50:37 IST" duration-ms="28237">
+      <class name="testcases.RestAssured_TestCases">
+        <test-method signature="loginWithSeleniumAndGetCookie()[pri:0, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:08 IST" name="loginWithSeleniumAndGetCookie" description="Login to OrangeHRM using Selenium and retrieve session cookie" finished-at="2025-08-18T14:50:25 IST" duration-ms="16830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithSeleniumAndGetCookie -->
+        <test-method signature="getSubunitsTree()[pri:1, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:25 IST" name="getSubunitsTree" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/subunits?mode=tree&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate the request uses proper Rest Assured methods (given, cookie, get, response)
+4. Validate that the response contains non-empty &#039;id&#039; and &#039;name&#039; fields in the &#039;data&#039; list
+5. Validate response status code is 200 and status line is &#039;HTTP/1.1 200 OK&#039;
+6. Print the full response body for verification" finished-at="2025-08-18T14:50:27 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="2161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSubunitsTree -->
+        <test-method signature="getAdminSkills()[pri:2, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:27 IST" name="getAdminSkills" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/skills?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;id&#039; and &#039;name&#039; fields
+5. Validate response status code is 200 and status line is &#039;HTTP/1.1 200 OK&#039;
+6. Print the complete API response body for verification" finished-at="2025-08-18T14:50:28 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdminSkills -->
+        <test-method signature="getAdminEdu()[pri:3, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:28 IST" name="getAdminEdu" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/educations?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;id&#039; and &#039;name&#039; fields
+5. Verify that the status code is 200 and status line is &#039;HTTP/1.1 200 OK&#039;
+6. Print the full API response body to the console for verification" finished-at="2025-08-18T14:50:28 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdminEdu -->
+        <test-method signature="getAdminLicenses()[pri:4, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:28 IST" name="getAdminLicenses" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/licenses?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;id&#039; and &#039;name&#039; fields
+5. Verify the status code is 200 and the status line is &#039;HTTP/1.1 200 OK&#039;
+6. Print the full API response body for verification" finished-at="2025-08-18T14:50:29 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdminLicenses -->
+        <test-method signature="getAdminLanguages()[pri:5, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:29 IST" name="getAdminLanguages" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/languages?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;id&#039; and &#039;name&#039; fields
+5. Verify the status code is 200 and the status line is &#039;HTTP/1.1 200 OK&#039;
+6. Print the full API response body for verification" finished-at="2025-08-18T14:50:29 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdminLanguages -->
+        <test-method signature="getMembershipdetails()[pri:6, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:29 IST" name="getMembershipdetails" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/memberships?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;id&#039; and &#039;name&#039; fields
+5. Verify the status code is 200 and the status line is &#039;HTTP/1.0 200 OK&#039;
+6. Print the full API response body for verification" finished-at="2025-08-18T14:50:30 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMembershipdetails -->
+        <test-method signature="getNationalities()[pri:7, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:30 IST" name="getNationalities" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/nationalities?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;id&#039; and &#039;name&#039; fields
+5. Verify the status code is 200 and the status line is &#039;HTTP/1.0 200 OK&#039;
+6. Print the full API response body for verification" finished-at="2025-08-18T14:50:30 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNationalities -->
+        <test-method signature="getTheme()[pri:8, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:30 IST" name="getTheme" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/theme&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Verify the status code is 200 and the status line is &#039;HTTP/1.0 200 OK&#039;
+5. Verify the PrimaryColor,PrimaryFontColor,Secondary color is not null" finished-at="2025-08-18T14:50:31 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTheme -->
+        <test-method signature="getemailConfiguration()[pri:9, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:31 IST" name="getemailConfiguration" description="1. Send a GET request to the &#039;web/index.php/api/v2/admin/email-configuration&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;mailType&#039;, &#039;sentAs&#039;, &#039;smtpAuthType&#039;, &#039;smtpHost&#039;, &#039;smtpUsername&#039;
+5. Verify the status code is 200 and the status line is &#039;HTTP/1.0 200 OK&#039;
+" finished-at="2025-08-18T14:50:31 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getemailConfiguration -->
+        <test-method signature="getEmailSubscription()[pri:10, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:31 IST" name="getEmailSubscription" description="1. Send a GET request to the &#039;/web/index.php/api/v2/admin/email-subscriptions?limit=50&amp;offset=0&#039; endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the &#039;data&#039; array in the response contains non-empty &#039;id&#039;, &#039;name&#039;, &#039;isEnable&#039;is boolean,meta is not empty
+5. Verify the status code is 200 and the status line is &#039;HTTP/1.0 200 OK&#039;
+" finished-at="2025-08-18T14:50:32 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmailSubscription -->
+        <test-method signature="PostCaption()[pri:11, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:32 IST" name="PostCaption" description="1. Create a requestbody as 
+2. Fetch the ID using getFirstUserId and pass it in request body &#039;{&quot;ids&quot;: [%d]}&#039;
+3. Post the String using &#039;/web/index.php/api/v2/buzz/posts&#039;
+4. Verify the user is deleted by comparing IDs before and after" finished-at="2025-08-18T14:50:32 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostCaption -->
+        <test-method signature="PostPhoto()[pri:12, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:32 IST" name="PostPhoto" description="1. Upload a photo via JSON payload with base64
+2. Call &#039;/web/index.php/api/v2/buzz/posts&#039; with type &#039;photo&#039;
+3. Verify status code and response fields" finished-at="2025-08-18T14:50:34 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostPhoto -->
+        <test-method signature="LikeShare()[pri:13, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:34 IST" name="LikeShare" description="1. Call &#039;/web/index.php/api/v2/buzz/shares/19/likes&#039; to like a share
+2. Verify status code and response fields" finished-at="2025-08-18T14:50:35 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="1167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LikeShare -->
+        <test-method signature="DeleteShare()[pri:14, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:35 IST" name="DeleteShare" description="1. Call &#039;/web/index.php/api/v2/buzz/shares/{id}&#039; with DELETE method
+2. Verify correct Rest Assured delete implementation
+3. Verify status code and response fields" finished-at="2025-08-18T14:50:36 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteShare -->
+        <test-method signature="UpdateBuzzPost()[pri:15, instance:testcases.RestAssured_TestCases@1ebd319f]" started-at="2025-08-18T14:50:36 IST" name="UpdateBuzzPost" description="1. Call &#039;/web/index.php/api/v2/buzz/posts/{id}?model=detailed&#039; with PUT method
+2. Verify correct Rest Assured PUT implementation
+3. Verify status code and updated text in response" finished-at="2025-08-18T14:50:37 IST" depends-on-methods="testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie" duration-ms="871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateBuzzPost -->
+      </class> <!-- testcases.RestAssured_TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 18 14:50:08 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>28 seconds (28237 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PostPhoto()'><b>PostPhoto</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Upload a photo via JSON payload with base64
+2. Call '/web/index.php/api/v2/buzz/posts' with type 'photo'
+3. Verify status code and response fields</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getemailConfiguration()'><b>getemailConfiguration</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the 'web/index.php/api/v2/admin/email-configuration' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'mailType', 'sentAs', 'smtpAuthType', 'smtpHost', 'smtpUsername'
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.PostCaption()'><b>PostCaption</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Create a requestbody as 
+2. Fetch the ID using getFirstUserId and pass it in request body '{"ids": [%d]}'
+3. Post the String using '/web/index.php/api/v2/buzz/posts'
+4. Verify the user is deleted by comparing IDs before and after</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.LikeShare()'><b>LikeShare</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Call '/web/index.php/api/v2/buzz/shares/19/likes' to like a share
+2. Verify status code and response fields</td>
+<td></td>
+<td>1</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getSubunitsTree()'><b>getSubunitsTree</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/subunits?mode=tree' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate the request uses proper Rest Assured methods (given, cookie, get, response)
+4. Validate that the response contains non-empty 'id' and 'name' fields in the 'data' list
+5. Validate response status code is 200 and status line is 'HTTP/1.1 200 OK'
+6. Print the full response body for verification</td>
+<td></td>
+<td>2</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getNationalities()'><b>getNationalities</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/nationalities?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+6. Print the full API response body for verification</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getAdminSkills()'><b>getAdminSkills</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/skills?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Validate response status code is 200 and status line is 'HTTP/1.1 200 OK'
+6. Print the complete API response body for verification</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getMembershipdetails()'><b>getMembershipdetails</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/memberships?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+6. Print the full API response body for verification</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.UpdateBuzzPost()'><b>UpdateBuzzPost</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Call '/web/index.php/api/v2/buzz/posts/{id}?model=detailed' with PUT method
+2. Verify correct Rest Assured PUT implementation
+3. Verify status code and updated text in response</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getAdminEdu()'><b>getAdminEdu</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/educations?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify that the status code is 200 and status line is 'HTTP/1.1 200 OK'
+6. Print the full API response body to the console for verification</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getEmailSubscription()'><b>getEmailSubscription</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/email-subscriptions?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id', 'name', 'isEnable'is boolean,meta is not empty
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getAdminLanguages()'><b>getAdminLanguages</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/languages?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.1 200 OK'
+6. Print the full API response body for verification</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getAdminLicenses()'><b>getAdminLicenses</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/licenses?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.1 200 OK'
+6. Print the full API response body for verification</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.getTheme()'><b>getTheme</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Send a GET request to the '/web/index.php/api/v2/admin/theme' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+5. Verify the PrimaryColor,PrimaryFontColor,Secondary color is not null</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.DeleteShare()'><b>DeleteShare</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: 1. Call '/web/index.php/api/v2/buzz/shares/{id}' with DELETE method
+2. Verify correct Rest Assured delete implementation
+3. Verify status code and response fields</td>
+<td></td>
+<td>0</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+<tr>
+<td title='testcases.RestAssured_TestCases.loginWithSeleniumAndGetCookie()'><b>loginWithSeleniumAndGetCookie</b><br>Test class: testcases.RestAssured_TestCases<br>Test method: Login to OrangeHRM using Selenium and retrieve session cookie</td>
+<td></td>
+<td>16</td>
+<td>testcases.RestAssured_TestCases@1ebd319f</td></tr>
+</table><p>
+</body>
+</html>

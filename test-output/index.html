@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\u8941\AppData\Local\Temp\testng-eclipse--1597893634\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="DeleteShare">DeleteShare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="LikeShare">LikeShare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="PostCaption">PostCaption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="PostPhoto">PostPhoto</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="UpdateBuzzPost">UpdateBuzzPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getAdminEdu">getAdminEdu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getAdminLanguages">getAdminLanguages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getAdminLicenses">getAdminLicenses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getAdminSkills">getAdminSkills</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getEmailSubscription">getEmailSubscription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getMembershipdetails">getMembershipdetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getNationalities">getNationalities</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getSubunitsTree">getSubunitsTree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getTheme">getTheme</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="getemailConfiguration">getemailConfiguration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.RestAssured_TestCases" class="method navigator-link" hash-for-method="loginWithSeleniumAndGetCookie">loginWithSeleniumAndGetCookie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.RestAssured_TestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteShare">
+                  </a> <!-- DeleteShare -->
+                  <span class="method-name">DeleteShare</span>
+                  <em>
+(1. Call '/web/index.php/api/v2/buzz/shares/{id}' with DELETE method
+2. Verify correct Rest Assured delete implementation
+3. Verify status code and response fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LikeShare">
+                  </a> <!-- LikeShare -->
+                  <span class="method-name">LikeShare</span>
+                  <em>
+(1. Call '/web/index.php/api/v2/buzz/shares/19/likes' to like a share
+2. Verify status code and response fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostCaption">
+                  </a> <!-- PostCaption -->
+                  <span class="method-name">PostCaption</span>
+                  <em>
+(1. Create a requestbody as 
+2. Fetch the ID using getFirstUserId and pass it in request body '{"ids": [%d]}'
+3. Post the String using '/web/index.php/api/v2/buzz/posts'
+4. Verify the user is deleted by comparing IDs before and after)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostPhoto">
+                  </a> <!-- PostPhoto -->
+                  <span class="method-name">PostPhoto</span>
+                  <em>
+(1. Upload a photo via JSON payload with base64
+2. Call '/web/index.php/api/v2/buzz/posts' with type 'photo'
+3. Verify status code and response fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateBuzzPost">
+                  </a> <!-- UpdateBuzzPost -->
+                  <span class="method-name">UpdateBuzzPost</span>
+                  <em>
+(1. Call '/web/index.php/api/v2/buzz/posts/{id}?model=detailed' with PUT method
+2. Verify correct Rest Assured PUT implementation
+3. Verify status code and updated text in response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdminEdu">
+                  </a> <!-- getAdminEdu -->
+                  <span class="method-name">getAdminEdu</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/educations?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify that the status code is 200 and status line is 'HTTP/1.1 200 OK'
+6. Print the full API response body to the console for verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdminLanguages">
+                  </a> <!-- getAdminLanguages -->
+                  <span class="method-name">getAdminLanguages</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/languages?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.1 200 OK'
+6. Print the full API response body for verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdminLicenses">
+                  </a> <!-- getAdminLicenses -->
+                  <span class="method-name">getAdminLicenses</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/licenses?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.1 200 OK'
+6. Print the full API response body for verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdminSkills">
+                  </a> <!-- getAdminSkills -->
+                  <span class="method-name">getAdminSkills</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/skills?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Validate response status code is 200 and status line is 'HTTP/1.1 200 OK'
+6. Print the complete API response body for verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEmailSubscription">
+                  </a> <!-- getEmailSubscription -->
+                  <span class="method-name">getEmailSubscription</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/email-subscriptions?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id', 'name', 'isEnable'is boolean,meta is not empty
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMembershipdetails">
+                  </a> <!-- getMembershipdetails -->
+                  <span class="method-name">getMembershipdetails</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/memberships?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+6. Print the full API response body for verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getNationalities">
+                  </a> <!-- getNationalities -->
+                  <span class="method-name">getNationalities</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/nationalities?limit=50&offset=0' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'id' and 'name' fields
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+6. Print the full API response body for verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSubunitsTree">
+                  </a> <!-- getSubunitsTree -->
+                  <span class="method-name">getSubunitsTree</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/subunits?mode=tree' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate the request uses proper Rest Assured methods (given, cookie, get, response)
+4. Validate that the response contains non-empty 'id' and 'name' fields in the 'data' list
+5. Validate response status code is 200 and status line is 'HTTP/1.1 200 OK'
+6. Print the full response body for verification)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTheme">
+                  </a> <!-- getTheme -->
+                  <span class="method-name">getTheme</span>
+                  <em>
+(1. Send a GET request to the '/web/index.php/api/v2/admin/theme' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+5. Verify the PrimaryColor,PrimaryFontColor,Secondary color is not null)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getemailConfiguration">
+                  </a> <!-- getemailConfiguration -->
+                  <span class="method-name">getemailConfiguration</span>
+                  <em>
+(1. Send a GET request to the 'web/index.php/api/v2/admin/email-configuration' endpoint with a valid cookie
+2. Do not pass any request body (null)
+3. Validate that the method uses Rest Assured methods: given, cookie, get, response
+4. Assert that the 'data' array in the response contains non-empty 'mailType', 'sentAs', 'smtpAuthType', 'smtpHost', 'smtpUsername'
+5. Verify the status code is 200 and the status line is 'HTTP/1.0 200 OK'
+)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithSeleniumAndGetCookie">
+                  </a> <!-- loginWithSeleniumAndGetCookie -->
+                  <span class="method-name">loginWithSeleniumAndGetCookie</span>
+                  <em>
+(Login to OrangeHRM using Selenium and retrieve session cookie)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\u8941\AppData\Local\Temp\testng-eclipse--1597893634\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.RestAssured_TestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">PL2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteShare</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">LikeShare</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostCaption</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PostPhoto</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">UpdateBuzzPost</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAdminEdu</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAdminLanguages</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAdminLicenses</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAdminSkills</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getEmailSubscription</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMembershipdetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getNationalities</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getSubunitsTree</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTheme</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getemailConfiguration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithSeleniumAndGetCookie</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginWithSeleniumAndGetCookie')
+data.setCell(0, 2, 'testcases.RestAssured_TestCases')
+data.setCell(0, 3, 16830);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getSubunitsTree')
+data.setCell(1, 2, 'testcases.RestAssured_TestCases')
+data.setCell(1, 3, 2161);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'PostPhoto')
+data.setCell(2, 2, 'testcases.RestAssured_TestCases')
+data.setCell(2, 3, 1208);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LikeShare')
+data.setCell(3, 2, 'testcases.RestAssured_TestCases')
+data.setCell(3, 3, 1167);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'DeleteShare')
+data.setCell(4, 2, 'testcases.RestAssured_TestCases')
+data.setCell(4, 3, 947);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'UpdateBuzzPost')
+data.setCell(5, 2, 'testcases.RestAssured_TestCases')
+data.setCell(5, 3, 871);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getemailConfiguration')
+data.setCell(6, 2, 'testcases.RestAssured_TestCases')
+data.setCell(6, 3, 585);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'PostCaption')
+data.setCell(7, 2, 'testcases.RestAssured_TestCases')
+data.setCell(7, 3, 551);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getAdminSkills')
+data.setCell(8, 2, 'testcases.RestAssured_TestCases')
+data.setCell(8, 3, 520);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getAdminEdu')
+data.setCell(9, 2, 'testcases.RestAssured_TestCases')
+data.setCell(9, 3, 491);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getAdminLicenses')
+data.setCell(10, 2, 'testcases.RestAssured_TestCases')
+data.setCell(10, 3, 481);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getAdminLanguages')
+data.setCell(11, 2, 'testcases.RestAssured_TestCases')
+data.setCell(11, 3, 474);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getNationalities')
+data.setCell(12, 2, 'testcases.RestAssured_TestCases')
+data.setCell(12, 3, 463);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'getEmailSubscription')
+data.setCell(13, 2, 'testcases.RestAssured_TestCases')
+data.setCell(13, 3, 463);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'getMembershipdetails')
+data.setCell(14, 2, 'testcases.RestAssured_TestCases')
+data.setCell(14, 3, 458);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getTheme')
+data.setCell(15, 2, 'testcases.RestAssured_TestCases')
+data.setCell(15, 3, 442);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.RestAssured_TestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWithSeleniumAndGetCookie</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSubunitsTree</span>
+                <span class="method-start">16840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdminSkills</span>
+                <span class="method-start">19010 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdminEdu</span>
+                <span class="method-start">19534 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdminLicenses</span>
+                <span class="method-start">20030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdminLanguages</span>
+                <span class="method-start">20524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMembershipdetails</span>
+                <span class="method-start">21003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getNationalities</span>
+                <span class="method-start">21467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTheme</span>
+                <span class="method-start">21934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getemailConfiguration</span>
+                <span class="method-start">22379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEmailSubscription</span>
+                <span class="method-start">22965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PostCaption</span>
+                <span class="method-start">23430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PostPhoto</span>
+                <span class="method-start">23991 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LikeShare</span>
+                <span class="method-start">25201 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteShare</span>
+                <span class="method-start">26376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UpdateBuzzPost</span>
+                <span class="method-start">27326 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
